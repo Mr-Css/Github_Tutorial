@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+
+</head>
+
+<body>
+	<div style="height: 350px; background-color: coral;">
+		<img id="img1" style="position: absolute" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQCgZQvwx8WCQq4biicUyTatUB6dhHcjMKeQ&usqp=CAU" width="270" height="270" />
+	</div>
+	<div style="height: 400px; background-color: darkkhaki;">
+		<img id="img2" style="position: absolute" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV0wutxkpGxGRkNZC4_G5LRhTz7hWcDQm1hw&usqp=CAU" width="170" height="170" />
+	</div>
+
+	<script type="text/javascript">
+		(function () {
+
+			var elem = document.getElementById('img1'),
+				position = 0,
+				timer = setInterval(function () {
+					position++;
+					elem.style.left = position + 'px';
+					if (pos == 1920) clearInterval(timer);
+				}, 25);
+		})();
+		(function () {
+
+			var elem = document.getElementById('img2'),
+				position = 400,
+				timer = setInterval(function () {
+					position++;
+					elem.style.top = position + 'px';
+					if (pos == 947) clearInterval(timer);
+				}, 25);
+		})();
+	</script>
+</body>
+
+</html>

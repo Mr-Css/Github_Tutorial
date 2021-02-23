@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+</head>
+
+<body style="font-family: arial; background-color: aqua">
+	<div style="text-align: center;">
+		<h1>Bạn hãy nhập vào số lượng và giá:</h1>
+
+		<label for=""><b>Số lượng:</b></label>
+		<input id="SoLuong" />
+		<label for=""><b>Đơn giá: </b></label>
+		<input id="DonGia" onKeyUp="TinhTien()" />
+		<hr />
+		<label for=""><b>Thành tiền:</b></label>
+		<input id="ThanhTien" />
+		<b>USD</b>
+	</div>
+	<script>
+		function TinhTien() {
+			var soLuong = document.getElementById('SoLuong');
+			var donGia = document.getElementById('DonGia');
+			var thanhTien = document.getElementById('ThanhTien');
+			thanhTien.value = soLuong.value * donGia.value
+		}
+	</script>
+</body>
+
+</html>
